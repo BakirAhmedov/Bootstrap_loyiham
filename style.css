@@ -1,0 +1,121 @@
+/* -------=======  SECTION HEADER & HERO =========-------- */
+
+.logo {
+    font-weight: 600;
+}
+
+.header, .hero, .action {
+    background:rgb(68, 73, 78);
+    color: #fff;
+}
+.hero-link {
+    border: 1px solid none;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+.btn-hero {
+    background: blue;
+    color: #fff;
+    border: 1px solid rgb(161, 81, 5);
+    border-radius: 30px;
+    padding: 7px 30px;
+}
+.list:active {
+    background-color: rgb(32, 62, 199);
+}
+
+.btn-hero:hover {
+    background-color: rgb(245, 198, 81);
+    color:black;
+}
+/* -------======= END OF SECTION HEADER & HERO =========-------- */
+.bold-title {
+    color: rgb(5, 5, 27);
+    font-weight: 800;
+    opacity: 0.8;
+}
+.title-inner {
+    font-weight: 700;
+}
+
+.nav-box {
+    background-color: burlywood;
+    color: black;
+    border-radius: 10px;
+    margin-bottom:10px ;
+}
+
+/* -------======= SECTION WHO WE ARE =========-------- */
+.btn-who {
+    background-color: #fff;
+    color: rgb(212, 206, 206);
+    border: 1.5px solid rgb(247, 93, 5)    
+}
+
+.btn-who:hover {
+    background-color: rgb(245, 189, 49);
+    color: #fff;
+    
+}
+
+.modi, img {
+    object-fit:collapse;
+}
+.action-text {
+    color: #fff;
+}
+
+.volup-text {
+    font-size: 1.8rem;
+}
+.about-card:hover {
+    background-color: rgb(214, 96, 12);
+    color: #fff;
+}
+.about-text:hover {
+    color: #fff;
+}
+/* -------======= END OF SECTION WHO WE ARE =========-------- */
+.footer {
+    background: black;
+}
+
+.box {
+    padding: 5px;
+    border: 1px solid none;
+    border-radius: 10px;
+}
+
+.footbtn:hover {
+    background-color: rgba(33, 243, 33, 0.87);
+    color: #fff;
+}
+
+.footbtn {
+    margin: 5px 15px;
+    padding: 5px  70px;
+    font-weight: 500;
+    border: 1px solid rgb(53, 52, 52);
+    border-radius: 20px;
+}
+.kunlar {
+    margin-right: 15px;
+}
+
+.xarid {
+    margin: 0 10px;
+}
+
+.rasm {
+    text-align: center;
+}
+
+.card-box {
+    padding: 10px;
+}
+
+.card-box:hover {
+    background-color: blue;
+    color: red;
+    font-weight: 700;
+}

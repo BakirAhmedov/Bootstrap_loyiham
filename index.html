@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navs & Tabs</title>
+    <link rel="stylesheet" href="./accest/bootstrap/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+</head>
+
+<body>
+    <!------====== HEADER ======------>
+<header class="header">
+    <nav class="navbar  navbar-expand-lg">
+        <div class="container">
+                <a class="navbar-brand logo text-white display-3" href="https://www.alitech.uz" target="_blank">Alitech.uz</a>
+                <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link hero-link text-white active">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link hero-link text-white">Xizmatlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link hero-link text-white">Biznes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link hero-link text-white">Loyihalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link hero-link text-white">Kontakt</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link hero-link list dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Drop Down
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item hero-link" href="#">Bosh sahifa</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Biznes</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Xizmatlar</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Portfolio</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Kontakt</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-primary xarid " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Xaridlar</button>
+                </li>
+                </ul>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Ro'yxatdan o'tish
+              </button>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header bg-primary">
+                      <h5 class="modal-title" id="staticBackdropLabel">Ushbu formani to'ldiring</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body  bg-light text-dark">
+                                                 
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label"></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Guruh nomi">
+                                </div>
+                                <div class="d-flex">
+                                    <label for="exampleFormControlInput1" class="form-label"></label>
+                                    <input type="text" class="form-control me-3" id="exampleFormControlInput1" placeholder="Guruh narxi">
+                                    <label for="exampleFormControlInput1" class="form-label"></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Guruh xonasi">
+                                </div>
+                                <div class="mt-2 hafta bg-white box">
+                                    <label for="name"> Monday
+                                        <input type="radio" class="kunlar" name="name" id="name">
+                                    </label> 
+                                    <label for="name"> Tuesday
+                                        <input type="radio" class="kunlar" name="name" id="name">
+                                    </label>
+                                    <label for="name"> Wednesday
+                                        <input type="radio" class="kunlar" name="name" id="name">
+                                    </label> 
+                                    <label for="name"> Thursday  
+                                        <input type="radio" class="kunlar" name="name" id="name">
+                                    </label> 
+                                    <label for="name"> Saturday 
+                                        <input type="radio" class="kunlar" name="name" id="name">
+                                        </label> 
+                                        <label for="name"> Sunday  
+                                            <input type="radio" class="kunlar" name="name" id="name">
+                                        </label>  
+                                </div>
+                       
+                       <div class="accordion mt-3" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Kurslar
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                             <p><strong>Web developer Frontend</strong></p>
+                             <p><strong>Web developer Beckend NodJs</strong></p>
+                             <p><strong>Web developer Full stack</strong></p>
+                             <p><strong>UX/UI DESIGN AND MARKETING</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Mentorlar
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <p><strong>Abduraimov Sanjar (Frontend)</strong></p>
+                              <p><strong>Abduraimov Sanjar (Beckend)</strong></p>
+                              <p><strong>Musurmonov Alisher (Full-stack</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Talabalar
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <p><strong>Abdusamatov Muhammad</strong></p>
+                              <p><strong>Ahmedov Bakir</strong></p>
+                              <p><strong>O'ktamov Orziqul</strong></p>
+                              <p><strong>Islom</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row row-cols-sm-4 g-3 mt-3 text-center">
+                          <div class="col">
+                              <div class="card  card-box">Kutish</div>
+                          </div>
+                          <div class="col">
+                              <div class="card  card-box">Faol</div>
+                          </div>
+                          <div class="col">
+                              <div class="card  card-box">Demo</div>
+                          </div>
+                          <div class="col">
+                              <div class="card  card-box">online</div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn  footbtn" data-bs-dismiss="modal">Yopish</button>
+                      <button type="button" class="btn  footbtn">Saqlash</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<!------====== END OF HEADER ======------>
+<section class="offcans">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header offcanvas-sm">
+            <h5 id="offcanvasRightLabel"><strong>Xaridlar ro'yhati</strong></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-box list dropdown-toggle text-white"  href="#" id="navbarDropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">Maishiy taxnika</a>
+                <!-- =========== -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item hero-link" href="#">Kondinsionar</a></li>
+                    <li><a class="dropdown-item hero-link" href="#">Elektropech</a></li>
+                    <li><a class="dropdown-item hero-link" href="#">Artel</a></li>
+                </ul>
+                <!-- =========== -->
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link nav-box list dropdown-toggle text-white"  href="#" id="navbarDropdownMenuLink1"
+                    data-bs-toggle="dropdown" aria-expanded="false" >Mevalar</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                        <li><a class="dropdown-item hero-link" href="#">Olma</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Nok</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Xurmo</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Banan</a></li>
+                    </ul>
+
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link nav-box list dropdown-toggle text-white"  href="#" id="navbarDropdownMenuLink2"
+                    data-bs-toggle="dropdown" aria-expanded="false" >Qishloq xo'jaligi maxsulotlari</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <li><a class="dropdown-item hero-link" href="#">Kartoshka</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Sabzi</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Piyoz</a></li>
+                    </ul>
+                
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link nav-box list dropdown-toggle text-white"  href="#" id="navbarDropdownMenuLink3"
+                    data-bs-toggle="dropdown" aria-expanded="false" >Oshxona</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <li><a class="dropdown-item hero-link" href="#">Jizzax Somsa</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Osh</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Tandir</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Kabob</a></li>
+                    </ul>
+
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link nav-box list dropdown-toggle text-white"  href="#" id="navbarDropdownMenuLink13"
+                    data-bs-toggle="dropdown" aria-expanded="false">Kompyuter</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <li><a class="dropdown-item hero-link" href="#">Acer ci-5</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Asus ci-7</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">HP corai-7</a></li>
+                        <li><a class="dropdown-item hero-link" href="#">Macbook</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        </div>
+</section>
+    <!------====== SECTION HERO ======------>
+<section class="hero">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col mb-3">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://i.pinimg.com/originals/91/bd/fc/91bdfc18b34be0200834137aa3f7891c.jpg" class="d-block w-100" style="height: 500px;" >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-3 pt-5 pb-3">Sequi ea ut et est quaret</h2>
+                        <p class="pb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae dicta ab, recusandae perferendis ullam saepe pariatur aliquam quis <br> facilis, officia iusto molestias itaque distinctio voluptate consequatur, libero nostrum rerum ratione quibusdam accusantium! <br> Dignissimos dolorum, hic ullam iste deleniti a qui.</p>
+                        <button class="btn mb-5 btn-hero">Read More</button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.pinimg.com/originals/4e/6a/94/4e6a947cb4ff9a92be4ef5a1d32dac8a.jpg" class="d-block w-100" style="height: 500px;" >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-3 pt-5 pb-3">Sequi ea ut et est quaret</h2>
+                        <p class="pb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae dicta ab, recusandae perferendis ullam saepe pariatur aliquam quis <br> facilis, officia iusto molestias itaque distinctio voluptate consequatur, libero nostrum rerum ratione quibusdam accusantium! <br> Dignissimos dolorum, hic ullam iste deleniti a qui.</p>
+                        <button class="btn mb-5 btn-hero">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                
+            </div>
+
+            <!-- gggg -->
+
+            <!-- gggg -->
+        </div>
+    </div>
+</section>
+<!------====== END OF SECTION HERO ======------>
+<!------====== SECTION WHO WE ======------>
+<section class="who we">
+    <div class="container">
+        <div class="row mb-5 mt-5">
+            <div class="col">
+                <h6 class="text-muted title-inner">ABOUT </h6>
+                <h3 class="display-5 bold-title">WHO WE ARE</h3>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <!-- ===== -->
+            <div class="col">
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestias ratione saepe in magni atque consectetur alias expedita?
+                </p>
+                
+                <div class="row ">
+                    <div class="col-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                         <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+                        </svg>
+                    </div>
+                    <div class="col-11">
+                        <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                        <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                        <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+                      </svg></div>
+                    <div class="col-11">
+                        <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                        <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                        <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+                      </svg></div>
+                    <div class="col-11">
+                        <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                        <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                        <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+                      </svg></div>
+                    <div class="col-11">
+                        <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+               
+            </div>
+            <!-- ҳҳҳҳҳҳҳҳҳ -->
+            <div class="col">
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat amet voluptatem assumenda cumque explicabo accusantium dolore magni iusto deserunt ut corporis dolores rem maxime, doloremque voluptate, quisquam recusandae autem tempore?
+                </p>
+                <button class="btn btn-who">Learn More</button>
+                
+            </div>
+        </div>
+        <div class="row gy-3 mt-5 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4">
+            <div class="col">
+                <div class="card about-card p-3">
+                    <div class="row">
+                        <div class="col-4">
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                          </svg>
+                        </div>
+                        <div class="col-8">
+                            <p class="text-mute about-text"> Modi sut est dela pireda reast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card about-card p-3">
+                    <div class="row">
+                        <div class="col-4">
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"/>
+                          </svg>
+                        </div>
+                        <div class="col-8">
+                            <p class="text-mute about-text"> Modi sut est dela pireda reast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card about-card p-3">
+                    <div class="row">
+                        <div class="col-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                          </svg>
+                        </div>
+                        <div class="col-8">
+                            <p class="text-mute about-text"> Modi sut est dela pireda reast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card about-card p-3">
+                    <div class="row">
+                        <div class="col-4">
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                          </svg>
+                        </div>
+                        <div class="col-8">
+                            <p class="text-mute about-text"> Modi sut est dela pireda reast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gy-3 mt-5 row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
+            <div class="col">
+                <p class="volup-text">Voluptatem dignissimos pravident quasi corporis voluptates sit assumenda</p>
+                <p class="who-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugit dicta modi illo non ducimus placeat eligendi repellendus sapiente praesentium.</p>
+                <div class="row">
+                    <div class="col-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                            <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+                          </svg>
+                    </div>
+                    <div class="col-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                            <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+                          </svg>
+                    </div>
+                    <div class="col-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                            <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+                          </svg>
+                    </div>
+                    <div class="col-11">Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque recusandae nostrum necessitatibus in molestiae sit ipsa blanditiis, sunt dicta voluptas. elit.</div>
+                </div>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor suscipit aspernatur maiores placeat quibusdam dolorem eveniet, delectus eos eius nostrum. Ex nisi doloremque commodi quo quaerat tenetur voluptatibus itaque aliquid.</p>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img  class="img" src="https://media-cdn.tripadvisor.com/media/photo-s/1a/97/18/5b/html-base64-phnjcmlwdd5hbgvydc.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------====== END OF SECTION WHO WE ======------>
+<!------====== SECTION ACTION ======------>
+<section class="action">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col col-12 col-sm-12 col-md-7 col-lg-9 ps-0">
+                <div class="card border-0" style="background-color:rgb(68, 73, 78);">
+                    <div class="card-body text-white">
+                        <div class="card-text">
+                            <div class="card-title">
+                                <h3 class="text-muted bold-title">Call To ACtion</h3>
+                            </div>
+                            <p class="action-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores quisquam quae
+                            ratione aspernatur? Repudiandae vero illo expedita totam porro est nostrum quam enim
+                            omnis eveniet reprehenderit nesciunt magni laudantium tenetur, fugiat rerum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-5 col-lg-3">
+                    <div class="card m-5 border-0"><a href="#" class="btn btn-warning">Caley To ACtion</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------====== END OF SECTION ACTION ======------>
+    <!------====== SECTION WHAT DONE ======------>
+<section class="what done">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-3 mb-3">
+                    <p class="text-muted p-0 title-inner">SERVICES</p>
+                    <h1 class="mb-5 bold-title">WHAT WE DO OFFER</h1>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
+                    <div class="col">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="https://go.imgsmail.ru/imgpreview?key=14f2d4be02b708dd&mb=imgdb_preview_exp"
+                                    class="card-img-top mt-5" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body">
+                                        <h3 class="text-muted">Lorem ipsun</h3>
+                                        <!-- <div class="card-title"></div> -->
+                                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Velit consequatur incidunt doloremque voluptas animi.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="https://go.imgsmail.ru/imgpreview?key=14f2d4be02b708dd&mb=imgdb_preview_exp"
+                                        class="card-img-top mt-5" alt="">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="card-body">
+                                            <h3 class="text-muted">Lorem ipsun</h3>
+                                            <!-- <div class="card-title"></div> -->
+                                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Velit consequatur incidunt doloremque voluptas animi.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="https://go.imgsmail.ru/imgpreview?key=14f2d4be02b708dd&mb=imgdb_preview_exp"
+                                            class="card-img-top mt-5" alt="">
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="card-body">
+                                                <h3 class="text-muted">Lorem ipsun</h3>
+                                                <!-- <div class="card-title"></div> -->
+                                                <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Velit consequatur incidunt doloremque voluptas animi.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="https://go.imgsmail.ru/imgpreview?key=14f2d4be02b708dd&mb=imgdb_preview_exp"
+                                class="card-img-top mt-5" alt="">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h3 class="text-muted">Lorem ipsun</h3>
+                                    <!-- <div class="card-title"></div> -->
+                                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Velit consequatur incidunt doloremque voluptas animi.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="https://go.imgsmail.ru/imgpreview?key=14f2d4be02b708dd&mb=imgdb_preview_exp"
+                                class="card-img-top mt-5" alt="">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h3 class="text-muted">Lorem ipsun</h3>
+                                    <!-- <div class="card-title"></div> -->
+                                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Velit consequatur incidunt doloremque voluptas animi.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="https://go.imgsmail.ru/imgpreview?key=14f2d4be02b708dd&mb=imgdb_preview_exp"
+                                    class="card-img-top mt-5" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body">
+                                        <h3 class="text-muted">Lorem ipsun</h3>
+                                        <!-- <div class="card-title"></div> -->
+                                        <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Velit consequatur incidunt doloremque voluptas animi.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+</section>
+        <!------====== END OF  SECTION WHAT DONE ======------>
+        <!------====== SECTION PORTFOLIO ======------>
+<section class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col mt-3 mb-3">
+                        <p class="text-muted p-0 title-inner">PORFOLIO</p>
+                        <h1 class="mb-5 bold-title">WHAT WE'WE DONE</h1>
+                        <ul class="nav nav-pills justify-content-end" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button">IT sohasi</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button">Sport</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"
+                                type="button">Tabiat</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings"
+                                type="button">Shaharlar</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="tabiat-tab" data-bs-toggle="tab" data-bs-target="#tabiat"
+                                type="button">Hayvonot olami</button>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row g-3">
+                                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="card">
+                                            <img src="https://go.imgsmail.ru/imgpreview?key=3fe756cea9ab3518&mb=imgdb_preview_exp"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?ext=jpg&size=626"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://go.imgsmail.ru/imgpreview?key=29b345e426bf798a&mb=imgdb_preview_exp"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://taster.ba/wp-content/uploads/2017/09/web-dizajn-kurs-Web-Developer-Bootcamp.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="http://vsekidki.ru/uploads/posts/2016-11/1480083995_webdesigner2.png"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://www.ogo.ua/images/articles/1567/big/1404882431.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row g-3">
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://go.imgsmail.ru/imgpreview?key=1b1fd31e21696443&mb=imgdb_preview_exp"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://st3.depositphotos.com/1671840/18090/i/450/depositphotos_180905834-stock-photo-amsterdam-apr-2015-bmw-car.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://static7.depositphotos.com/1062035/744/i/600/depositphotos_7448071-stock-photo-car-in-the-light-of.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://qvz.uz/wp-content/uploads/2019/07/5d1542343e337d0a7a4324aae247c7fd.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://go.imgsmail.ru/imgpreview?key=2c598ee54d3ad639&mb=imgdb_preview_exp"
+                                            alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="card">
+                                            <img src="https://www.avtorinok.ru/cache/photo/pics/chevrolet/spark/194342-gthumb-gwdata240-ghdata180-gfitdatacrop.jpg"
+                                            alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="card">
+                                            <img src="http://ikey.by/upload/iblock/3c9/3c9bace4331200ec8c35384efbfd217a.jpg"
+                                            alt="">
+                                        </div>
+                                    </div>
+                                    <!-- ===== ===============================-->
+                                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 ">
+                                        <div class="card">
+                                            <img src="http://ikey.by/upload/iblock/3c9/3c9bace4331200ec8c35384efbfd217a.jpg"
+                                            alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="card">
+                                            <img src="http://ikey.by/upload/iblock/3c9/3c9bace4331200ec8c35384efbfd217a.jpg"
+                                            alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="card">
+                                            <img src="http://ikey.by/upload/iblock/3c9/3c9bace4331200ec8c35384efbfd217a.jpg"
+                                            alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2 ">
+                                    <div class="card">
+                                        <img src="http://ikey.by/upload/iblock/3c9/3c9bace4331200ec8c35384efbfd217a.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="http://ikey.by/upload/iblock/3c9/3c9bace4331200ec8c35384efbfd217a.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                            <div class="row g-3">
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://childrenart.ru/wp-content/uploads/uzory-iz-opavshih-listev-foto_32.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://static8.depositphotos.com/1005145/1046/i/600/depositphotos_10464803-stock-photo-field-of-flowering-poppies.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="http://i.ytimg.com/vi/N_Y140sth2o/hqdefault.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://kv-pusu.ucoz.com/_ph/13/423245164.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://kv-pusu.ucoz.com/_ph/13/2/616163222.jpg?1634773367" alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://i04.fotocdn.net/s112/b36f0ff0afef3434/public_pin_m/2510745034.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://i.ytimg.com/vi/X3M3f-U9JQc/hqdefault.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://listingsca.com/common/articles/ca/photos/4-0870.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://i06.fotocdn.net/s114/51f4b87bf7e75261/public_pin_m/2590978351.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://static8.depositphotos.com/1005145/1046/i/600/depositphotos_10464803-stock-photo-field-of-flowering-poppies.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="http://img1.liveinternet.ru/images/attach/c/0/36/465/36465691_Tiha11111111.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col  col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://st.depositphotos.com/1222912/1909/i/450/depositphotos_19096661-stock-photo-fantasy-landscape-computer-artwork.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                            <div class="row g-3">
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://www.savol-javob.com/wp-content/uploads/2021/03/photo_2021-03-23_23-04-09-300x188.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="http://3.bp.blogspot.com/-BvstEQCX2V4/T4v1-76cwBI/AAAAAAAAABk/4cuf42PaP-g/s1600/minorai_kalon.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="http://3.bp.blogspot.com/-BvstEQCX2V4/T4v1-76cwBI/AAAAAAAAABk/4cuf42PaP-g/s1600/minorai_kalon.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="http://ecowoman.ru/foto/sites/default/files/imagecache/width_300/viktoria/samye_bolshie_goroda_mira_10.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://existed.ru/uploads/7179195.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://gooper.ucoz.ru/_nw/139/76028066.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="http://womanadvice.ru/sites/default/files/viktoria/samye_bolshie_goroda_mira_3.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://www.factroom.ru/facts/wp-content/uploads/2012/08/57.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="http://3.bp.blogspot.com/-BvstEQCX2V4/T4v1-76cwBI/AAAAAAAAABk/4cuf42PaP-g/s1600/minorai_kalon.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="http://invest.gov.uz/wp-content/uploads/karta-2-1024x524.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://science-interest.ru/wp-content/uploads/2019/06/ffba84c1a549c08769645beecacac3db.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card">
+                                        <img src="https://existed.ru/uploads/7179195.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabiat" role="tabpanel" aria-labelledby="tabiat-tab">
+                            <div class="row g-3">
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="https://intelligentdesignscience.files.wordpress.com/2011/03/animal-pictures.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="http://img1.liveinternet.ru/images/attach/c/0/34/297/34297990_Jaguar_055.jpg"
+                                            alt="">
+                                        </div>
+                                    </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="http://media.karelia.pro/77/57d9680e4286fd6c9df4b0d4776f0cf4.jpg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card">
+                                        <img src="https://xrest.ru/schemes/00/00/89/6d/%D0%9B%D0%B5%D0%B2-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="row"></div>
+        </div>
+</section>
+    <!------====== END OF  SECTION PORTFOLIO ======------>
+    <!------======  SECTION SAYING ABOUT ======------>
+<section class="saying about">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col mt-3 mb-3">
+                    <p class="text-muted p-0 title-inner">TESTIMONIALS</p>
+                    <h1 class="mb-5 bold-title">WHAT THEY ARE SAYING ABOUT US</h1>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 text-center">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-text"><q>Lorem ipsum, dolor sit amet consectetur Aliquam fuga sequi eveniet
+                                    eos perferendis nostrum enim accusamus, magni at provident.adipisicing elit. Aliquam
+                                    fuga sequi eveniet eos perferendis nostrum enim accusamus, magni at provident.</q>
+                                </div>
+                                <img src="https://opengeekslab.com/wp-content/uploads/2020/02/11-Benefits-While-Hiring-a-Full-Stack-Developer-for-Your-Project.png"
+                                alt="" class="card-img-top rounded-circle m-3" style="width: 170px; height: 170px;">
+                                <div class="card-title text-muted">Dasturchialr</div>
+                                <h6 class="text-muted">Dasturlash Tillari</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-text"><q>Lorem ipsum, dolor sit amet consectetur Aliquam fuga sequi eveniet
+                                    eos perferendis nostrum enim accusamus, magni at provident.adipisicing elit. Aliquam
+                                    fuga sequi eveniet eos perferendis nostrum enim accusamus, magni at provident.</q>
+                                </div>
+                                <img src="https://static10.tgstat.ru/channels/_0/83/8376884c9b44bbd50bbeefb4837846c6.jpg"
+                                alt="" class="card-img-top rounded-circle m-3" style="width: 170px; height: 170px;">
+                                <div class="card-title text-muted">Saidbek Arislanov</div>
+                                <h6 class="text-muted">Frontend Dasturchi</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-text"><q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+                                fuga sequi eveniet eos perferendis nostrum enim accusamus, magni at provident.
+                                Aliquam fuga sequi eveniet eos perferendis nostrum enim accusamus, magni at
+                                provident.</q>
+                            </div>
+                            <img src="https://zamin.uz/uploads/posts/2018-04/1522772965_akmal-kadirov4.jpg" alt=""
+                            class="card-img-top rounded-circle m-3" style="width: 170px; height: 170px;">
+                            <div class="card-title text-muted">Akmal Qodirov</div>
+                            <h6 class="text-muted">Dasturchi</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    <!------====== END OF  SECTION SAYING ABOUT ======------>
+    <!------======  SECTION OUR COMPETING ======------>
+<section class="our competing">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-3 mb-3">
+                    <p class="text-muted p-0 title-inner">PRICING</p>
+                    <h1 class="mb-5 bold-title">OUR COPETING PRICES</h1>
+                    </div>
+                </div>
+                <div class="row text-center row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 gy-3">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header border-warning bg-warning">Business</div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h6><sup>$</sup>0/month</h6>
+                                    <h6>Aida dere</h6>
+                                    <h6>Nec Fegiac Nisl</h6>
+                                    <h6>Nulla at velutpat</h6>
+                                    <h6> Pharetra massa</h6>
+                                    <h6> Masse ultrices mi</h6>
+                                    <div class="card-footer"> <a href="#" class="btn btn-warning">Boy Now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header border-warning bg-warning">Business</div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h6><sup>$</sup>19/month</h6>
+                                    <h6>Aida dere</h6>
+                                    <h6>Nec Fegiac Nisl</h6>
+                                    <h6>Nulla at velutpat</h6>
+                                    <h6> Pharetra massa</h6>
+                                    <h6> Masse ultrices mi</h6>
+                                    <div class="card-footer"> <a href="#" class="btn btn-warning">Boy Now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header border-warning bg-warning">Business</div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <h6><sup>$</sup>29/month</h6>
+                                    <h6>Aida dere</h6>
+                                    <h6>Nec Fegiac Nisl</h6>
+                                    <h6>Nulla at velutpat</h6>
+                                    <h6> Pharetra massa</h6>
+                                    <h6> Masse ultrices mi</h6>
+                                    <div class="card-footer"> <a href="#" class="btn btn-warning">Boy Now</a></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header border-warning bg-warning">Business</div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h6><sup>$</sup>49/month</h6>
+                                <h6>Aida dere</h6>
+                                <h6>Nec Fegiac Nisl</h6>
+                                <h6>Nulla at velutpat</h6>
+                                <h6> Pharetra massa</h6>
+                                <h6> Masse ultrices mi</h6>
+                                <div class="card-footer"> <a href="#" class="btn btn-warning">Boy Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    <!------====== END OF  SECTION OUR COMPETING ======------>
+    <!------======  SECTION FREQUENTLY ======------>
+    <section class="frequently">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-3 mb-3">
+                    <p class="text-muted p-0 title-inner">F.A.Q</p>
+                    <h1 class="mb-5 bold-title">FREQUENTLY ASKED QUESTIONS</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg></div>
+                        <div class="col-11"><p class="h4"> Non consecteter a aerait nam at lectus urna duis?</p></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg></div>
+                        <div class="col-11"><p class="h4"> Non consecteter a aerait nam at lectus urna duis?</p></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg></div>
+                        <div class="col-11"><p class="h4"> Non consecteter a aerait nam at lectus urna duis?</p></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg></div>
+                        <div class="col-11"><p class="h4"> Non consecteter a aerait nam at lectus urna duis?</p></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-1">
+                            <div class="card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="col-11"><p class="h4"> Non consecteter a aerait nam at lectus urna duis?</p></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg></div>
+                        <div class="col-11"><p class="h4"> Non consecteter a aerait nam at lectus urna duis?</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------====== END OF SECTION FREQUENTLY ======------>
+    <!------======  SECTION HARDWORKING ======------>
+<section class="hardworking">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-3 mb-3">
+                    <p class="text-muted p-0 title-inner">TEAM</p>
+                    <h1 class="mb-3 bold-title">OUR HARDWORKING TEAM</h1>
+                </div>
+            </div>
+            <div class="row mb-5 text-center row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 text-center gy-3 ">
+                <div class="col">
+                    <div class="card p-3">
+                        <img src="http://i.ytimg.com/vi/7f-1Umrk5GY/hqdefault.jpg" alt="rasm"
+                        class="card-img-top rounded-circle m-auto " style="width: 170px; height: 170px;">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h5 class="text-muted">Watter Whate</h5>
+                            </div>
+                            <div class="card-text">
+                                <p>Chief Execitive Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-3">
+                        <img src="https://sevisl.com/img/team/team_David2.jpg" alt="rasm"
+                        class="card-img-top rounded-circle m-auto" style="width: 170px; height: 170px;">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h5 class="text-muted">Sarah Jhonson</h5>
+                            </div>
+                            <div class="card-text">
+                                <p>Product Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-3">
+                        <img src="https://pointstart.io/images/bios/parker.jpg" alt="rasm"
+                        class="card-img-top rounded-circle m-auto" style="width: 170px; height: 170px;">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h5 class="text-muted">Willan Anderson</h5>
+                            </div>
+                            <div class="card-text">
+                                <p>CTO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-3">
+                        <img src="https://sevisl.com/img/team/team_Alex.png" alt="rasm"
+                        class="card-img-top rounded-circle m-auto " style="width: 170px; height: 170px;">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h5 class="text-muted">Amanda Jepson</h5>
+                            </div>
+                            <div class="card-text">
+                                <p>Accountant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    <!------====== END OF  SECTION HARDWORKING ======------>
+    <!------======  SECTION FOOTER ======------>
+<footer class="footer">
+        <div class="container">
+            <div class="row mt-3 mb-3 text-center text-white">
+                <div class="col">
+                    <h4 class="m-3">Selecao</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, suscipit. Iusto, quibusdam neque
+                        tenetur eligendi quae asperiores cum.</p>
+                        <span classs fas-fa-icon-twitter></span>
+                        <span> </span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="text-muted">&copy; CopyRight Selecao. All Rights Reserved <br> Designed by BootstrapMade</p>
+                    </div>
+                </div>
+            </div>
+</footer>
+    <!------====== END OF  SECTION FOOTER ======------>
+        
+
+        
+        
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+        <script src="./accest/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+    
+    </html>
